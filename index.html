@@ -3,16 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toggle Visibility Example</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Nursing Fundamentals Quiz</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
 </head>
 <body>
-    <div class="container">
-        <h1>Click the Button to Toggle Text</h1>
-        <button id="toggleButton">Toggle Text</button>
-        <p id="toggleText">This is some text that will be toggled on and off.</p>
-    </div>
 
-    <script src="script.js"></script>
+    <!-- Video Lecture Section -->
+    <section id="lecture">
+        <h1>Video Lecture: Fundamentals of Nursing</h1>
+        <iframe width="390" height="315" src="https://www.youtube.com/embed/xu0pGgQWPYc?si=mXeNURk0jZobHw53" 
+                title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="quiz">
+        <h2>Quiz: Fundamentals of Nursing</h2>
+        <form id="quizForm">
+            <div class="quiz-question">
+                <p>1. What is the primary role of a nurse?</p>
+                <input type="radio" name="q1" value="A"> A. Doctor assistance<br>
+                <input type="radio" name="q1" value="B"> B. Patient care<br>
+                <input type="radio" name="q1" value="C"> C. Admin work<br>
+                <input type="radio" name="q1" value="D"> D. Prescribing medicine<br>
+                <span class="feedback" id="feedback1"></span>
+            </div>
+
+            <div class="quiz-question">
+                <p>2. Which of the following is a vital sign nurses regularly monitor?</p>
+                <input type="radio" name="q2" value="A"> A. Blood pressure<br>
+                <input type="radio" name="q2" value="B"> B. Body height<br>
+                <input type="radio" name="q2" value="C"> C. Blood type<br>
+                <input type="radio" name="q2" value="D"> D. Hair color<br>
+                <span class="feedback" id="feedback2"></span>
+            </div>
+
+            <div class="quiz-question">
+                <p>3. What is the standard term for hospital-related infections?</p>
+                <input type="radio" name="q3" value="A"> A. Contagious infections<br>
+                <input type="radio" name="q3" value="B"> B. Hospital-induced sickness<br>
+                <input type="radio" name="q3" value="C"> C. Nosocomial infections<br>
+                <input type="radio" name="q3" value="D"> D. Chronic infections<br>
+                <span class="feedback" id="feedback3"></span>
+            </div>
+
+            <div class="quiz-question">
+                <p>4. Which of the following is a fundamental nursing responsibility?</p>
+                <input type="radio" name="q4" value="A"> A. Diagnosing illnesses<br>
+                <input type="radio" name="q4" value="B"> B. Administering medications<br>
+                <input type="radio" name="q4" value="C"> C. Performing surgeries<br>
+                <input type="radio" name="q4" value="D"> D. Signing prescriptions<br>
+                <span class="feedback" id="feedback4"></span>
+            </div>
+
+            <div class="quiz-question">
+                <p>5. Which of the following is part of basic patient care?</p>
+                <input type="radio" name="q5" value="A"> A. Cleaning patient rooms<br>
+                <input type="radio" name="q5" value="B"> B. Washing hands before care<br>
+                <input type="radio" name="q5" value="C"> C. Supervising surgeons<br>
+                <input type="radio" name="q5" value="D"> D. Ordering medical tests<br>
+                <span class="feedback" id="feedback5"></span>
+            </div>
+
+            <button type="submit">Submit Quiz</button>
+        </form>
+    </section>
+
+    <!-- Assignment Section -->
+    <section id="assignment">
+        <h2>Assignment</h2>
+        <p><strong>Assignment Question:</strong> List and briefly explain any 5 fundamentals of nursing.</p>
+        <p>Please submit your assignment by sending an email to: <a href="mailto:nursingmadesimple101@gmail.com">nursingmadesimple101@gmail.com</a></p>
+        <p>If the link does not work, send your assignment manually to: nursingmadesimple101@gmail.com</p>
+        <textarea id="assignmentInput" rows="6" placeholder="Write your assignment here..."></textarea>
+        <button id="submitAssignment" onclick="submitAssignment()">Submit Assignment</button>
+    </section>
+
+    <!-- Donation Section -->
+    <section id="donation">
+        <h2>PLEASE DONATE</h2>
+        <p>Account Number: 2032202001590</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/GTBank_logo.svg/768px-GTBank_logo.svg.png" alt="GTBank Logo" width="150">
+        <p>Wave Mobile: 3709558</p>
+        <img src="https://s.rfi.fr/media/display/ed44f02a-c239-11ec-b0fc-005056bf8594/w:1280/p:16x9/wave-senegal-mobile-money.png" alt="Wave Mobile Logo" width="150">
+    </section>
+
+    <script src="script.js"></script> <!-- Link to external JS file -->
 </body>
 </html>
