@@ -1,4 +1,4 @@
-document.getElementById('quizForm').addEventListener('submit', function(event) {
+ldocument.getElementById('quizForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent form submission
 
     let score = 0;
@@ -11,11 +11,11 @@ document.getElementById('quizForm').addEventListener('submit', function(event) {
 
     // Correct answers for each question
     const correctAnswers = {
-        q1: 'B',
+        q1: 'C',
         q2: 'B',
         q3: 'C',
-        q4: 'B',
-        q5: 'A'
+        q4: 'A',
+        q5: 'C'
     };
 
     // Check each question
